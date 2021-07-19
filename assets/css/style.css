@@ -1,0 +1,280 @@
+/*
+Teamplate Name: Zakkash
+Author: Creative IT Institute
+Version: 1.0
+
+----------------------------------------------------------------
+Table of Contents
+----------------------------------------------------------------
+    1) Common Css
+    2) About Css
+*/
+
+/* Common  Css Start */
+:root {
+    --white-color: #ffffff;
+    --fog-white-color: #444444;
+    --dark-text-color: #222222;
+    --hlt-color: #de4644;
+    --main-font: 'Raleway', sans-serif;
+    --secondary-font: 'Open Sans', sans-serif;
+    --special-font: 'Sacramento', cursive;
+}
+
+
+
+body {
+    font-family: var(--main-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+span,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+img{
+    width:100%;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.section_title{
+    text-align: center;
+}
+.section_title h2{
+    font-size: 40px;
+    line-height:44px;
+    color:var(--dark-text-color);
+    font-weight: 500;
+    padding-bottom: 10px;
+    position: relative;
+    margin-bottom: 50px;
+    display: inline-block;
+}
+.section_title h2::after,
+.section_title h2::before{
+    content:'';
+    position: absolute;
+    height:1px;
+    background-color:var(--hlt-color);
+    left:0;
+    bottom:0;
+}
+
+.section_title h2::before{
+    width:50%;
+    margin-bottom: 5px;
+}
+.section_title h2::after{
+    width:25%;
+}
+/* Common  Css end */
+
+/*header section Start*/
+#top_header{
+    background: #444444;
+}
+#top_header .left_top_header .sel-box{
+    float: left;
+    font-size: 13px;
+    padding-right: 30px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+#top_header .left_top_header .sel-box select {
+    background: none;
+    color: var(--white-color);
+    border: none;
+    cursor: pointer;
+}
+#top_header .left_top_header .sel-box select option{
+    color: var(--dark-text-color);
+}
+#top_header .left_top_header .sel-box a{
+    color: #dddddd;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+}
+#top_header .right_top_header ul li{
+    display: inline-block;
+    padding-top: 18px;
+    padding-bottom: 5px;
+}
+#top_header .right_top_header ul li a{
+    color: #dddddd;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 400;
+    padding-left: 29px;
+}
+/*header section end*/
+
+/*Navbar section start*/
+#main_menu ul li a{
+    font-weight: 500;
+    font-size: 16px;
+    color: #222222;
+    position: relative;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+#main_menu ul li a:hover{
+    color: var(--hlt-color);
+}
+#main_menu ul li a::before{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 1px;
+    background: var(--hlt-color);
+    bottom: 2px;
+    left: 9px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+#main_menu ul li:hover a::before{
+    opacity: 1;
+}
+#main_menu ul li a::after{
+    position: absolute;
+    content: '';
+    width: 22px;
+    height: 1px;
+    background: var(--hlt-color);
+    bottom: 6px;
+    left: 9px;
+    opacity: 0;
+    transition: all linear .3s;
+}
+#main_menu ul li:hover a::after{
+    opacity: 1;
+}
+/*Navbar section end*/
+
+/*banner start*/
+#banner .slider_item{
+    height:566px;
+    background-size: cover !important;
+    background-position: center !important;
+}
+#banner .banner_slider_container{
+    position: relative;
+}
+#banner .banner_slider_container .slider_item:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+#banner .slider_item .slider_content{
+    z-index: 9999999;
+}
+#banner .slider_item .slider_content h1{
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--hlt-color);
+}
+#banner .slider_item .slider_content h2{
+    font-size: 40px;
+    font-weight: 400;
+    color: var(--white-color);
+    text-transform: uppercase;
+    padding:0 0 10px;
+}
+#banner .slider_item .slider_content p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #f1f1f1;
+    padding-bottom: 48px;
+}
+#banner .slider_item .slider_content a{
+    text-decoration: none;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 20px;
+    background: var(--hlt-color);
+    border: 1px solid var(--hlt-color);
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    transition: all linear .3s;
+}
+#banner .slider_item .slider_content a:hover{
+    background: none;
+    border-color:var(--white-color);
+}
+#banner .slider_item .slider_content .sec{
+    background: none;
+    border: 1px solid var(--white-color);
+    margin-left: 30px;
+}
+#banner .slider_item .slider_content .sec:hover{
+    background: var(--hlt-color);
+    border-color:var(--hlt-color);
+}
+#banner .banner_slider_container .slider_arrow{
+   position: absolute;
+   top: 88%;
+   font-size:20px;
+   width:40px;
+   height:40px;
+   text-align: center;
+   line-height:40px;
+   cursor: pointer;
+   color: var(--white-color);
+   z-index: 4;
+}
+#banner .slider_arrow.slider_arrow_left{
+    left: 45%;
+    transform: translateX(43%);
+    bottom: -30px;
+    border: 1px solid var(--white-color);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+#banner .slider_arrow.slider_arrow_left:hover{
+    background: var(--hlt-color);
+}
+#banner .slider_arrow.slider_arrow_right{
+    right: 48%;
+    transform: translateX(44%);
+    bottom: -30px;
+    border: 1px solid var(--white-color);
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+#banner .slider_arrow.slider_arrow_right:hover{
+    background: var(--hlt-color);
+}
+/*banner end*/
