@@ -176,6 +176,7 @@ img{
     height:566px;
     background-size: cover !important;
     background-position: center !important;
+    position: relative;
 }
 #banner .banner_slider_container{
     position: relative;
@@ -237,9 +238,10 @@ img{
     background: var(--hlt-color);
     border-color:var(--hlt-color);
 }
-#banner .banner_slider_container .slider_arrow{
+#banner .banner_slider_container .banner_arrow{
    position: absolute;
-   top: 88%;
+   left: 50%;
+   bottom: 30px;
    font-size:20px;
    width:40px;
    height:40px;
@@ -247,34 +249,133 @@ img{
    line-height:40px;
    cursor: pointer;
    color: var(--white-color);
-   z-index: 4;
+   z-index: 99;
 }
-#banner .slider_arrow.slider_arrow_left{
-    left: 45%;
-    transform: translateX(43%);
-    bottom: -30px;
+#banner .banner_arrow.left{
+    transform: translateX(-46px);
     border: 1px solid var(--white-color);
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-transform: translateX(-46px);
+    -moz-transform: translateX(-46px);
+    -ms-transform: translateX(-46px);
+    -o-transform: translateX(-46px);
 }
-#banner .slider_arrow.slider_arrow_left:hover{
+#banner .banner_arrow.left:hover{
     background: var(--hlt-color);
+    border-color: var(--hlt-color);
 }
-#banner .slider_arrow.slider_arrow_right{
-    right: 48%;
-    transform: translateX(44%);
-    bottom: -30px;
+#banner .banner_arrow.right{
+    transform: translateX(6px);
     border: 1px solid var(--white-color);
     transition: all linear .3s;
     -webkit-transition: all linear .3s;
     -moz-transition: all linear .3s;
     -ms-transition: all linear .3s;
     -o-transition: all linear .3s;
+    -webkit-transform: translateX(6px);
+    -moz-transform: translateX(6px);
+    -ms-transform: translateX(6px);
+    -o-transform: translateX(6px);
 }
-#banner .slider_arrow.slider_arrow_right:hover{
+#banner .banner_arrow.right:hover{
     background: var(--hlt-color);
+    border-color: var(--hlt-color);
 }
 /*banner end*/
+
+/*service section start*/
+#support{
+    background: #f1f1f1;
+    padding: 23px 0 20px 0;
+}
+#support .service_mid{
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+#support .service_item h3{
+    font-size: 24px;
+    color: #222222;
+    margin-top: 0;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all linear .3s;
+    -webkit-transition: all linear .3s;
+    -moz-transition: all linear .3s;
+    -ms-transition: all linear .3s;
+    -o-transition: all linear .3s;
+}
+#support .service_item h3:hover{
+    color: var(--hlt-color);
+}
+#support .service_item p{
+    font-size: 14px;
+    color: #444444;
+    line-height: 24px;
+}
+/*service section end*/
+
+/*newest section start*/
+#newest{
+    padding-top: 92px;
+}
+#newest .newest_thum{
+    position: relative;
+}
+#newest .newest_thum .newest_overlay{
+    position: absolute;
+    bottom: 5%;
+    left: 15px;
+    background: rgba(0,0,0,0.8);
+    width: 330px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+#newest .newest_thum .newest_overlay h2{
+    padding-top: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 36px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+#newest .newest_thum .newest_overlay h3{
+    margin-top: 0;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 500;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+#newest .newest_thum .newest_overlay a{
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+    transition: all linear .3s;
+}
+#newest .newest_thum .newest_overlay a:hover{
+    background: var(--hlt-color);
+    border-color: var(--hlt-color);
+}
+/*newest section end*/
+
+/*featured section start*/
+#featured{
+    padding-top: 90px;
+}
+#featured .filter-button{
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #444444;
+    margin-bottom: 30px;
+}
+/*featured section end*/
