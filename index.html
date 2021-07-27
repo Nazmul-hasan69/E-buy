@@ -82,7 +82,7 @@
           </div>
         </div>
       </section>
-      <nav class="navbar navbar-expand-lg">
+      <nav id="navbar" class="navbar navbar-expand-lg">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="assets/images/logo.png" alt="" />
@@ -90,37 +90,39 @@
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#main_menu">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="main_menu">
+          <div class="collapse navbar-collapse main_menu" id="main_menu">
             <ul class="navbar-nav mx-auto">
-              <li class="nav-item px-3">
+              <li class="nav-item px-2">
                 <a href="#" class="nav-link">Home</a>
               </li>
-              <li class="nav-item px-3">
+              <li class="nav-item px-2">
                 <a href="#" class="nav-link">About</a>
               </li>
-              <li class="nav-item px-3">
+              <li class="nav-item px-2">
                 <a href="#" class="nav-link">Shop</a>
               </li>
-              <li class="nav-item px-3">
+              <li class="nav-item px-2">
                 <a href="#" class="nav-link">Pages</a>
               </li>
-              <li class="nav-item px-3">
+              <li class="nav-item px-2">
                 <a href="#" class="nav-link">Blog</a>
               </li>
-              <li class="nav-item px-3">
+              <li class="nav-item px-2">
                 <a href="#" class="nav-link">Contact</a>
               </li>
             </ul>
-            <div class="search_cart d-flex align-items-center">
-              <div class="input-group search_box w-75">
-                <input type="text" class="form-control" />
-                <button class="btn">
-                  <i class="fas fa-search"></i>
-                </button>
-              </div>
-              <div class="cart_icon w-25">
-                <i class="fas fa-shopping-bag"></i>
-                2 items
+            <div class="search_box d-none d-lg-block">
+              <div class="d-flex flex-wrap align-items-center">
+                <div class="input_box">
+                  <input type="text" class="form-control" placeholder="Search">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="cart_icon">
+                  <a href="index.html">
+                    <i class="fa fa-shopping-bag"></i>
+                    2 items
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -564,10 +566,10 @@
                 <h3>NEW PRODUCT</h3>
                 <h2>MICROSOFT SURFACE PRO</h2>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Loremsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It hasived not only five centuries, with the release of Letraset sheets.</p>
-              </div>
-              <div class="offer_count_down">
-                <h2>LAUNCH IN</h2>
-                <div class="count_down row"></div>
+                <div class="offer_count_down">
+                  <h2>LAUNCH IN</h2>
+                  <div class="count_down row"></div>
+                </div>
               </div>
             </div>
           </div>

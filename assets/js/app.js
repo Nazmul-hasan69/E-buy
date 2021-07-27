@@ -19,10 +19,10 @@ $(function(){
   // Coutdown js
   $('.count_down').countdown('2021/12/12', function(event) {
     var $this = $(this).html(event.strftime(''
-      + '<div class="col-3"><div class="count_down_item"><div class= "coun"><h2><span>%d</span></h2><span>Days</span></div></div></div>'
-      + '<div class="col-3"><div class="count_down_item"><div class= "coun"><h2><span>%H</span></h2><span>Hours</span></div></div></div>'
-      + '<div class="col-3"><div class="count_down_item"><div class= "coun"><h2><span>%M</span></h2><span>Mins</span></div></div></div>'
-      + '<div class="col-3"><div class="count_down_item"><div class= "coun"><h2><span>%S</span></h2><span>Sec</span></div></div></div>'));
+      + '<div class="count_down_item col-md-3"><span>%d</span><span>Days</span></div>'
+      + '<div class="count_down_item col-md-3"><span>%H</span><span>Hours</span></div>'
+      + '<div class="count_down_item col-md-3"><span>%M</span><span>Mins</span></div>'
+      + '<div class="count_down_item col-md-3"><span>%S</span><span>Sec</span></div>'));
   });
 
   //latest js
