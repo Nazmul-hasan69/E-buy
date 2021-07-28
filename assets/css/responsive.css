@@ -1,66 +1,59 @@
+/* xxl-device Start*/
+@media (min-width: 1400px){}
 
-/* XX Large Css Start */
-@media (min-width:1400px){
-
-}
-/* //XX Large Css End */
-
-/* Extra Large Css Start */
-@media (min-width: 1200px) and (max-width: 1399.98px) {
-
-}
-/* //Extra Large Css End */
-
-/* Large Css Start */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-
-}
-/* //Large Css End */
-
-/* Medium Css Start */
-@media (min-width: 768px) and (max-width: 991.98px) {
-
-}
-/* //Medium Css End */
-
-/* Small Css Start */
-@media (min-width: 576px) and (max-width: 767.98px) {
-
-}
-/* //Small Css End */
-
-/* Extra Small Device Css Start */
-@media (max-width:575.98px){
-
-}
-/* //Extra Small Device Css End */
-
-
-@media (min-width: 992px){
-   .col-md-offset-4{
-      margin-left: 33.33333333%;
-   }
-}
-@media (max-width:767.98px){
-   #about .about_item_container .about_item:nth-child(odd){
-      text-align: left;
-   }
-}
-@media (min-width:768px){
-   #about .about_item_container .about_item:nth-child(odd) .about_heading{
-      display:flex;
-      flex-wrap: wrap;
-      justify-content:flex-end;
-      align-items:center;
-   }
-   #about .about_item_container .about_item:nth-child(odd) .about_heading i{
-      order: 2;
-   }
+/* xl-device Start*/
+@media (min-width: 1200px) and (max-width: 1399.98px){
+    /* Offer Responsive CSS Start */
+    #offer .offer_img{
+        margin-left: -30px;
+      }
 }
 
-@media (min-width:420px) and (max-width:575.98px){
-   #test .container .row .test_item{
-      flex: 0 0 auto;
-      width: 50%;
-   }
+/* lg-device Start*/
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .featured_item_overly2 ul {
+        padding-top: 30px;
+      }
+
+    /* Offer Responsive CSS Start */
+    #offer .offer_img{
+        margin-left: -15px;
+      }
+}
+
+/* md-device Start*/
+@media (min-width: 768px) and (max-width: 991.98px){}
+
+/* sml-device Start*/
+@media (min-width: 576px) and (max-width: 767.98px){
+
+}
+
+/* xsml-device Start*/
+@media (max-width: 575.98px){
+    /* Banner Responsive CSS Start */
+    #banner .slider_content{
+        text-align: center;
+    }
+    /* Banner Responsive CSS End */
+}
+
+@media (max-width: 991.98px){
+    /* Navbar Responsive CSS Start */
+    #navbar .navbar-brand img {
+        width: 80%;
+    }
+    .mobile_menu ul li {
+        display: inline-block;
+    }
+    /* Banner Responsive CSS Start */
+    #banner .slider_item{
+        height: 466px;
+    }
+
+    /* Offer Responsive CSS Start */
+    #offer .offer_img{
+        margin-left: 0px;
+      }
+
 }
