@@ -749,6 +749,8 @@ img{
 }
 #blog .blog_item .blog_img .blog_overlay p{
     position: absolute;
+    width: 100%;
+    text-align: center;
     bottom: 0;
     text-transform: capitalize;
     color: var(--white-color);
